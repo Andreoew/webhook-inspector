@@ -8,6 +8,13 @@
       "when": 1761958825331,
       "tag": "0000_even_nighthawk",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1762119571008,
+      "tag": "0001_wandering_outlaw_kid",
+      "breakpoints": true
     }
   ]
 }

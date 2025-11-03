@@ -4,7 +4,7 @@ import { uuidv7 } from 'uuidv7'
 export const webhooks = pgTable('webhooks', {
   id: text().primaryKey().$defaultFn(() => uuidv7()),
   method: text().notNull(),
-  patname: text().notNull(),
+  pathname: text().notNull(),
   ip: text().notNull(),
   statusCode: integer().notNull().default(200),
   contentType: text(),
