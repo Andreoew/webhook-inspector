@@ -14,7 +14,13 @@
 	<img src="./webhook.inspect.png" alt="Webhook Inspector screenshot" width="900" style="max-width:100%;height:auto;border-radius:8px;border:1px solid #e6e6e6" />
 </p>
 
-<p align="center"><em>Screenshot do Web UI do projeto — Webhook Inspector</em></p>
+<p align="center"><em>Screenshot da listagem de webhooks — Webhook Inspector</em></p>
+
+<p align="center">
+	<img src="./webhook.inspect-response.png" alt="Webhook Inspector response details" width="900" style="max-width:100%;height:auto;border-radius:8px;border:1px solid #e6e6e6;margin-top:16px" />
+</p>
+
+<p align="center"><em>Detalhes e payload do webhook recebido</em></p>
 
 > Instruções mínimas para instalar, rodar em desenvolvimento e ver as tecnologias usadas.
 
