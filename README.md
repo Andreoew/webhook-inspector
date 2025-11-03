@@ -8,11 +8,27 @@
 - pnpm (o projeto usa pnpm como package manager)
 - Postgres (se for usar a camada de banco do `api`)
 
+# Projeto Node + React
+
+<p align="center">
+	<img src="./webhook.inspect.png" alt="Webhook Inspector screenshot" width="900" style="max-width:100%;height:auto;border-radius:8px;border:1px solid #e6e6e6" />
+</p>
+
+<p align="center"><em>Screenshot do Web UI do projeto — Webhook Inspector</em></p>
+
+> Instruções mínimas para instalar, rodar em desenvolvimento e ver as tecnologias usadas.
+
+## Pré-requisitos
+
+- Node.js (18+ recomendado)
+- pnpm (o projeto usa pnpm como package manager)
+- Postgres (se for usar a camada de banco do `api`)
+
 ## Instalação
 
 1. No diretório raiz do projeto rode:
 
-```
+```bash
 pnpm install
 ```
 
@@ -26,27 +42,27 @@ Abra dois terminais (um para backend e outro para frontend):
 
 - Rodando o backend (Fastify + TypeScript):
 
-```
+```bash
 cd api
 pnpm dev
 ```
 
 ou, a partir da raiz usando filtros do pnpm:
 
-```
+```bash
 pnpm --filter api dev
 ```
 
 - Rodando o frontend (Vite + React):
 
-```
+```bash
 cd web
 pnpm dev
 ```
 
 ou, a partir da raiz:
 
-```
+```bash
 pnpm --filter web dev
 ```
 
@@ -56,7 +72,7 @@ Depois disso, o front normalmente estará em `http://localhost:5173` (ou porta i
 
 - Frontend:
 
-```
+```bash
 cd web
 pnpm build
 pnpm preview    # para verificar a build localmente
@@ -66,7 +82,7 @@ pnpm preview    # para verificar a build localmente
 
 O repositório fornece um script `start` em `api/package.json` que executa `node dist/server.ts`. Para produção você deve transpilar/empacotar o código TypeScript (por exemplo `tsc`, `esbuild` ou outro) gerando `dist/` e então executar:
 
-```
+```bash
 pnpm --filter api start
 ```
 
